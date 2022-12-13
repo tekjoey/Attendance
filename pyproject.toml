@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "attendance"
+version = "0.1.0"
+description = ""
+authors = ["Josiah McKay"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+django = "^4.1.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

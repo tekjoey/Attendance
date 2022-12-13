@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attendance</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Attendance</h1>
+      <form id="form">
+        <label for="last-name">Last Name</label>
+        <input
+          type="text"
+          name="last-name"
+          id="last-name"
+          placeholder="Last Name"
+        />
+        <label for="class-section">Class & Section</label>
+        <select name="class-section" id="class-section">
+          <option value="122-01">Buisness Calc sec 1</option>
+          <option value="122-02">Buisness Calc sec 2</option>
+          <option value="122-03">Buisness Calc sec 3</option>
+          <option value="170-01">Finite Math sec 1</option>
+        </select>
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
+  </body>
+  <script src="app.js"></script>
+</html>
