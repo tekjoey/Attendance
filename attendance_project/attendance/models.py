@@ -20,6 +20,7 @@ class Student(models.Model):
 class Attendance(models.Model):
     last_name = models.ForeignKey(to=Student, on_delete=models.CASCADE)
     date_time = models.DateTimeField('date & time')
+    excused = models.BooleanField(default=False)
 
     def __str__(self):
         return f"{self.last_name.first_name or self.last_name.last_name} attended class on {self.date_time} with uuid of {self.last_name.uuid['uuid'][0]}"
